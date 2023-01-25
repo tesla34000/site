@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORME - SITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96dcb489df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>.STOR</span>ME</h1>
+        </div>
+        <!-- menu responsive -->
+        <div class="toggle-menu"></div>
+
+        <ul class="menu">
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Serie</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="left">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text">
+            </div>
+            <hr>
+            <h1>Ce ne sont pas les gens qui changent, ce sont les masques qui tombent</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore rem ipsa officiis perferendis iusto dolorum aliquam, iste nostrum. Vero nisi officiis saepe doloremque quod porro nobis necessitatibus laudantium totam autem?</p>
+            <ul class="icons">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+        <!-- right div -->
+        <div class="right">
+             <img src="images/img.png">
+        </div>
+    </section>
+
+<script>
+    var menu = document.querySelector(".menu");
+    var toggle_menu = document.querySelector(".toggle-menu");
+    toggle_menu.onclick = function(){
+        toggle_menu.classList.toggle('active') ;
+        menu.classList.toggle('responsive') ;
+    }
+</script>
+
+</body>
+</html>
